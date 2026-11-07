@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>CringeDaddy · Live Time</title>
+<title>Rudra Das · CringeDaddy</title>
 <style>
 :root{color-scheme:dark;--r:#ff0033}
 *{box-sizing:border-box}
-body{margin:0;min-height:100vh;background:#000;color:#f2f2f2;font-family:'Courier New',Courier,monospace;display:flex;flex-direction:column;align-items:center;padding:24px 14px}
-body::before{content:"";position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,#ff00330a 3px 4px);pointer-events:none}
-h1{margin:8px 0 0;font-size:clamp(28px,7vw,48px);color:#fff;text-shadow:0 0 14px var(--r);text-align:center}
-.sub{color:var(--r);margin:4px 0 18px;text-align:center;font-size:14px}
-.card{width:100%;max-width:320px;border:1px solid var(--r);border-radius:14px;padding:12px 14px;margin:10px 0;background:#080008;box-shadow:0 0 18px #ff003333;text-align:center;position:relative}
-.lbl{color:#8b949e;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
-.clock{font-size:clamp(30px,9vw,42px);font-weight:700;color:var(--r);text-shadow:0 0 16px var(--r);margin:6px 0}
-.date{color:#ccc;font-size:14px}
-.where{color:#fff;margin-top:6px;font-size:14px}
-.live{position:absolute;top:12px;right:14px;font-size:11px;color:var(--r);animation:b 1s steps(1) infinite}
-@keyframes b{50%{opacity:.15}}
-.pen{max-width:100%;height:auto;margin-top:10px}
-.links{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:18px}
-.links a{color:#fff;text-decoration:none;border:1px solid var(--r);padding:8px 14px;border-radius:6px;font-size:13px;font-weight:700}
-.links a:hover{background:var(--r);box-shadow:0 0 14px var(--r)}
+html{background:#000}
+body{margin:0;min-height:100vh;color:#eee;font-family:'Courier New',Courier,monospace;background:radial-gradient(ellipse at 50% -10%,#45000f 0,#000 60%) fixed;padding:calc(14px + env(safe-area-inset-top,0px)) 14px calc(40px + env(safe-area-inset-bottom,0px))}
+#m{position:fixed;inset:0;width:100%;height:100%;z-index:-1;opacity:.22}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,transparent 0 3px,#ff00330a 3px 4px)}
+main{max-width:900px;margin:0 auto}
+img{max-width:100%;height:auto;display:block;margin:0 auto}
+section{margin:26px 0}
+.row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;max-width:850px;margin:14px auto 0}
+#t{text-align:center;color:var(--r);font-weight:700;font-size:clamp(16px,4vw,24px);min-height:36px;margin:16px 0 8px}
+#t::after{content:"▌";animation:k 1s steps(1) infinite}@keyframes k{50%{opacity:0}}
+#clk{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:12px;z-index:5;font:700 12px 'Courier New',monospace;color:var(--r);border:1px solid var(--r);border-radius:999px;padding:6px 12px;background:#000c;box-shadow:0 0 10px #ff003366;text-align:right}
+#clk small{display:block;color:#aaa;font-weight:400;font-size:10px}
+.sp{height:14px}
 </style></head><body>
-<h1>CringeDaddy</h1>
-<div class="sub">Rudra Das · Cyber Security Researcher | VAPT | IoT Specialist</div>
-<div class="card"><span class="live">● LIVE</span><div class="lbl">Your local time</div><div class="clock" id="me">--:--:--</div><div class="date" id="med"></div><div class="where" id="mew">locating...</div></div>
-<img class="pen" src="assets/penguin.svg" width="300" alt="Hacker penguin">
-<div class="links"><a href="https://github.com/CringeDaddy">GitHub</a><a href="https://www.linkedin.com/in/rudradas11/">LinkedIn</a><a href="https://tryhackme.com/p/RudraDas13">TryHackMe</a></div>
+<canvas id="m"></canvas>
+<div id="clk">🕒 --:--:--<small>locating...</small></div>
+<main>
+<img src="assets/header.svg" alt="Rudra Das">
+<div id="t"></div>
+<img src="assets/penguin.svg" width="420" alt="Hacker penguin saying hi">
+<div class="sp"></div>
+<div class="row">
+<a href="https://github.com/CringeDaddy"><img class="ext" src="https://komarev.com/ghpvc/?username=CringeDaddy&label=Profile%20Views&color=ff0033&style=for-the-badge&labelColor=000000" alt="views"></a><a href="https://www.linkedin.com/in/rudradas11/"><img class="ext" src="https://img.shields.io/badge/LinkedIn-Rudra%20Das-000000?style=for-the-badge&logo=linkedin&logoColor=ff0033&labelColor=000000&color=ff0033" alt="LinkedIn"></a><a href="https://tryhackme.com/p/RudraDas13"><img class="ext" src="https://img.shields.io/badge/TryHackMe-RudraDas13-000000?style=for-the-badge&logo=tryhackme&logoColor=ff0033&labelColor=000000&color=ff0033" alt="TryHackMe"></a>
+</div>
+<section><img src="assets/h-about.svg" alt="About Me"><div class="sp"></div><img src="assets/about.svg" alt="Terminal about me"></section>
+<section><img src="assets/h-skills.svg" alt="Tools and Skills"><div class="sp"></div>
+<img class="ext" src="https://skillicons.dev/icons?i=linux,bash,python,c,arduino,raspberrypi,burpsuite,wireshark,docker,git,github,jupyter,html,css&theme=dark&perline=7" alt="skills" style="max-width:520px"></section>
+<section><img src="assets/h-projects.svg" alt="Projects"><div class="grid"><a href="https://github.com/CringeDaddy/la-ultima-estrella-ctf"><img src="assets/card1.svg" alt="project 1"></a><a href="https://github.com/CringeDaddy/A-complete-Linux-Commands-Cheat-Sheet-Basic-Intermediate-"><img src="assets/card2.svg" alt="project 2"></a><a href="https://github.com/CringeDaddy/trashnet-master-ML-Final-Project"><img src="assets/card3.svg" alt="project 3"></a><a href="https://github.com/CringeDaddy/Analysis-of-Student-Course-Selections-Using-Apriori-Data-Mining-project-"><img src="assets/card4.svg" alt="project 4"></a><a href="https://github.com/CringeDaddy/Code_alpha-task"><img src="assets/card5.svg" alt="project 5"></a></div></section>
+<section><img src="assets/h-stats.svg" alt="GitHub Stats"><div class="sp"></div><img src="assets/stats.svg" alt="GitHub stats"></section>
+<section><img src="assets/h-connect.svg" alt="Connect"><div class="sp"></div><div class="row">
+<a href="https://www.linkedin.com/in/rudradas11/"><img class="ext" src="https://img.shields.io/badge/LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=ff0033" alt="LinkedIn"></a><a href="https://tryhackme.com/p/RudraDas13"><img class="ext" src="https://img.shields.io/badge/TryHackMe-000000?style=for-the-badge&logo=tryhackme&logoColor=ff0033" alt="TryHackMe"></a><a href="https://github.com/CringeDaddy"><img class="ext" src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=ff0033" alt="GitHub"></a>
+</div></section>
+<img src="assets/footer.svg" alt="">
+</main>
 <script>
-var tz;try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone}catch(e){}
-function $(i){return document.getElementById(i)}
-function t(z){var o={hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false};if(z)o.timeZone=z;return new Date().toLocaleTimeString('en-GB',o)}
-function d(z){var o={weekday:'long',year:'numeric',month:'long',day:'numeric'};if(z)o.timeZone=z;return new Date().toLocaleDateString('en-GB',o)}
-function tick(){$('me').textContent=t(tz);$('med').textContent=d(tz)}
-tick();setInterval(tick,1000);
-$('mew').textContent='Timezone: '+(tz||'unknown');
-try{fetch('https://ipapi.co/json/').then(function(r){return r.json()}).then(function(j){if(j&&j.country_code){var n=new Intl.DisplayNames(['en'],{type:'region'}).of(j.country_code);$('mew').textContent='📍 '+(j.city?j.city+', ':'')+n+' · '+(tz||j.timezone)}}).catch(function(){})}catch(e){}
+var L=["Cyber Security Researcher","VAPT","IoT Security Specialist","Learn Yourself"],i=0,j=0,d=false,el=document.getElementById("t");
+function tick(){var s=L[i];if(!d){j++;el.textContent=s.slice(0,j);if(j==s.length){d=true;return setTimeout(tick,1200)}}else{j--;el.textContent=s.slice(0,j);if(j==0){d=false;i=(i+1)%L.length}}setTimeout(tick,d?30:60)}tick();
+var tz="";try{tz=Intl.DateTimeFormat().resolvedOptions().timeZone||""}catch(e){}
+var clk=document.getElementById("clk"),place=tz.split("/").pop().replace("_"," ")||"your time";
+function ck(){clk.firstChild.nodeValue="🕒 "+new Date().toLocaleTimeString("en-GB",{hour12:false,timeZone:tz||undefined})}
+clk.innerHTML="🕒 --:--:--<small></small>";clk.lastChild.textContent=place;ck();setInterval(ck,1000);
+try{fetch("https://ipapi.co/json/").then(function(r){return r.json()}).then(function(j){if(j&&j.country_code){var n=new Intl.DisplayNames(["en"],{type:"region"}).of(j.country_code);clk.lastChild.textContent=(j.city?j.city+", ":"")+n}}).catch(function(){})}catch(e){}
+var c=document.getElementById("m"),x=c.getContext("2d"),cols,drops;
+function rs(){c.width=innerWidth;c.height=innerHeight;cols=Math.floor(c.width/16);drops=[];for(var k=0;k<cols;k++)drops.push(Math.random()*c.height/16)}
+rs();addEventListener("resize",rs);
+setInterval(function(){x.fillStyle="rgba(0,0,0,.12)";x.fillRect(0,0,c.width,c.height);x.fillStyle="#ff0033";x.font="14px monospace";
+for(var k=0;k<cols;k++){x.fillText(Math.random()<.5?"0":"1",k*16,drops[k]*16);if(drops[k]*16>c.height&&Math.random()>.975)drops[k]=0;drops[k]++}},70);
 </script></body></html>
