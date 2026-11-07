@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 260" width="860" height="260" role="img" aria-label="GitHub stats for CringeDaddy">
+<style>
+text{font-family:'Courier New',Courier,monospace}
+.lb{font-size:12px;fill:#8b8b8b;letter-spacing:2px}.vl{font-size:30px;font-weight:700;fill:#fff}.tx{font-size:13px;fill:#ddd}
+.ti{font-size:16px;font-weight:700;fill:#ff0033}.up{font-size:10px;fill:#666}
+.t{animation:fi .8s ease-out both}@keyframes fi{from{opacity:0;transform:translateY(8px)}}
+.bar{transform-box:fill-box;transform-origin:0 50%;animation:gr 1.6s ease-out both}@keyframes gr{from{transform:scaleX(0)}}
+.bd{animation:gl 2.4s ease-in-out infinite alternate}@keyframes gl{from{stroke-opacity:.35}to{stroke-opacity:1}}
+.sc{animation:sc 5s linear infinite}@keyframes sc{from{transform:translateY(-20px)}to{transform:translateY(270px)}}
+</style>
+<rect width="860" height="260" rx="14" fill="#000"/><rect class="sc" width="860" height="16" fill="#ff0033" opacity=".07"/>
+<rect class="bd" x="1" y="1" width="858" height="258" rx="14" fill="none" stroke="#ff0033" stroke-width="2"/>
+<text x="30" y="40" class="ti">&gt; CringeDaddy / github-stats</text>
+<g class="t" style="animation-delay:0.2s"><rect x="30" y="72" width="200" height="70" rx="10" fill="#0b0003" stroke="#ff0033" stroke-opacity=".55"/><text x="44" y="96" class="lb">PUBLIC REPOS</text><text x="44" y="128" class="vl">5</text></g>
+<g class="t" style="animation-delay:0.45s"><rect x="245" y="72" width="200" height="70" rx="10" fill="#0b0003" stroke="#ff0033" stroke-opacity=".55"/><text x="259" y="96" class="lb">FOLLOWERS</text><text x="259" y="128" class="vl">6</text></g>
+<g class="t" style="animation-delay:0.7s"><rect x="30" y="156" width="200" height="70" rx="10" fill="#0b0003" stroke="#ff0033" stroke-opacity=".55"/><text x="44" y="180" class="lb">FOLLOWING</text><text x="44" y="212" class="vl">3</text></g>
+<g class="t" style="animation-delay:0.95s"><rect x="245" y="156" width="200" height="70" rx="10" fill="#0b0003" stroke="#ff0033" stroke-opacity=".55"/><text x="259" y="180" class="lb">TOTAL STARS</text><text x="259" y="212" class="vl">-</text></g>
+<text x="480" y="62" class="lb">TOP LANGUAGES</text>
+<text x="480" y="104" class="tx">Jupyter Notebook</text><rect x="625" y="92" width="150" height="14" rx="7" fill="#1a0006"/><rect class="bar" style="animation-delay:0.6s" x="625" y="92" width="100" height="14" rx="7" fill="#DA5B0B"/><text x="786" y="104" class="tx">67%</text>
+<text x="480" y="134" class="tx">CSS</text><rect x="625" y="122" width="150" height="14" rx="7" fill="#1a0006"/><rect class="bar" style="animation-delay:0.8s" x="625" y="122" width="50" height="14" rx="7" fill="#8a4fff"/><text x="786" y="134" class="tx">33%</text>
+<text x="830" y="246" text-anchor="end" class="up">updated 2026-11-07 13:16 UTC</text>
+</svg>

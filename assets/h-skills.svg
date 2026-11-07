@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 48" width="860" height="48" role="img" aria-label="TOOLS &amp; SKILLS">
+<defs><linearGradient id="l"><stop offset="0" stop-color="#ff0033" stop-opacity="0"/><stop offset=".5" stop-color="#ff0033"/><stop offset="1" stop-color="#ff0033" stop-opacity="0"/></linearGradient>
+<clipPath id="c"><rect width="860" height="48" rx="9"/></clipPath>
+<style>.c{animation:b 1s steps(1) infinite}@keyframes b{50%{opacity:0}}</style></defs>
+<rect width="860" height="48" rx="9" fill="#000"/><rect width="6" height="48" fill="#ff0033"/>
+<text x="24" y="31" font-size="20" font-weight="700" fill="#ff0033" style="font-family:'Courier New',Courier,monospace">&gt; TOOLS_&amp;_SKILLS</text><rect class="c" x="223" y="14" width="10" height="20" fill="#ff0033"/>
+<g clip-path="url(#c)"><rect y="45" width="200" height="3" fill="url(#l)"><animate attributeName="x" from="-200" to="860" dur="3s" repeatCount="indefinite"/></rect></g>
+<rect x=".5" y=".5" width="859" height="47" rx="9" fill="none" stroke="#ff0033" stroke-opacity=".45"/></svg>

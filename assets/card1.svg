@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 118" width="410" height="118" role="img" aria-label="la-ultima-estrella-ctf">
+<defs><linearGradient id="l"><stop offset="0" stop-color="#ff0033" stop-opacity="0"/><stop offset=".5" stop-color="#ff0033"/><stop offset="1" stop-color="#ff0033" stop-opacity="0"/></linearGradient><clipPath id="c"><rect width="410" height="118" rx="12"/></clipPath>
+<style>text{font-family:'Courier New',Courier,monospace}.bd{animation:g 2.4s ease-in-out infinite alternate;animation-delay:0.0s}@keyframes g{from{stroke-opacity:.3}to{stroke-opacity:1}}</style></defs>
+<rect width="410" height="118" rx="12" fill="#000"/><text x="20" y="34" font-size="16" font-weight="700" fill="#ff0033">la-ultima-estrella-ctf</text><text x="20" y="62" font-size="13" fill="#c9c9c9">CTF challenge project</text>
+<circle cx="26" cy="102" r="5" fill="#8a4fff"/><text x="38" y="106" font-size="12" fill="#999">CSS</text><text x="390" y="106" font-size="12" text-anchor="end" fill="#ff0033">open &#8599;</text>
+<g clip-path="url(#c)"><rect y="115" width="120" height="3" fill="url(#l)"><animate attributeName="x" from="-120" to="410" dur="3s" begin="0.0s" repeatCount="indefinite"/></rect></g>
+<rect class="bd" x="1" y="1" width="408" height="116" rx="12" fill="none" stroke="#ff0033" stroke-width="2"/></svg>
